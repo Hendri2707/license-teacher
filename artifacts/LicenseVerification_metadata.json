@@ -1,0 +1,228 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "nama",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "bidang",
+						"type": "string"
+					}
+				],
+				"name": "LicenseIssued",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"name": "LicenseRevoked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"name": "LicenseUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
+				"name": "cabutLisensi",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
+				"name": "cekLisensi",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nama",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bidang",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tanggalTerbit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "masaBerlaku",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "aktif",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "valid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_nama",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bidang",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_masaBerlaku",
+						"type": "uint256"
+					}
+				],
+				"name": "terbitkanLisensi",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_nama",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bidang",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_masaBerlaku",
+						"type": "uint256"
+					}
+				],
+				"name": "updateLisensi",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"license-teacher.sol": "LicenseVerification"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"license-teacher.sol": {
+			"keccak256": "0x5f34e456b327e44cb3b99b5eb2ef9d7b675518fd36380bed8afb0f63116823fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d307f0ea8a51a966afc2039e77439671c5fba61fbd1ed2699b74c0329fdc279e",
+				"dweb:/ipfs/QmRkCdJLBVvBdRnHBonywBRS1pdHgGkDmFL2KqmkHcksGh"
+			]
+		}
+	},
+	"version": 1
+}
